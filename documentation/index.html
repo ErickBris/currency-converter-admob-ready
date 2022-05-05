@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+
+    <!-- --------------------------------------- 
+        title and basic metas 
+    ----------------------------------------- -->
+    <title>Documentation</title>
+    <meta charset="utf-8">
+    <meta name="author" content="creativedroids">
+    <meta name="description" content="Documentation">
+    <meta name="keywords" content="Docs, documentation">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- --------------------------------------- 
+        mobile metas 
+    ----------------------------------------- -->
+    <meta name="viewport" content="width=device-width, initital-scale=1, maximum-scale=1">
+
+    <!-- --------------------------------------- 
+        CSS stylesheets
+    ----------------------------------------- -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+    <!-- --------------------------------------- 
+        Javascripts libraries
+    ----------------------------------------- -->
+    <!-- library for jquery -->
+    <script src="libs/jquery.js"></script>
+    <!-- library for bootstrap -->
+    <script src="libs/bootstrap.min.js"></script>
+    <!-- library for scrollbar -->
+    <script src="libs/nicescroll.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container-wrap">
+
+        <div id="div-fixed-wrap" class="col-xs-12 col-sm-3 col-md-2 ">
+            <div id="div-fixed">
+                <h2>INDEX <i class="fa fa-arrow-up"></i></h2>
+
+                <ul id="list-index">
+                    <li><a href="#div-welcome">Welcome</a></li>
+                    <li><a href="#div-get-started">Getting Started</a></li>
+                    <li><a href="#div-import-code">Importing code into Eclipse</a></li>
+                    <li><a href="#div-admob">Adding Admob ads</a></li>
+                    <li><a href="#div-interstitial-interval">Change interstitial Id</a></li>
+                    <li><a href="#div-tapjoy-offerwall">Get Currencylayer Access API Key</a></li>
+                   
+                    <li><a href="#div-package">Changing Package Name</a></li>
+                   
+                    <li><a href="#div-color">Changing Colors</a></li>
+                    <li><a href="#div-developername">Changing Developer Name</a></li>
+                    <li><a href="#div-graphics">Changing Graphics</a></li>
+                    <li><a href="#div-support">Thank you</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="div-movable" class="col-xs-12 col-sm-9 col-md-10">
+
+            <h1 class="text-center">Thank you for purchasing the item.</h1>
+
+            <div id="div-welcome" class="div-mov-inner">
+
+                <h2>Currency Converter</h2>
+                <h4>Exchnage Rate | Currency Convert</h4>
+
+                <p>Version - 1.2
+                    <br/> Author - <a href="https://codecanyon.net/user/appsbee">AppsBee</a>
+                  
+
+                
+
+            </div>
+
+            <div id="div-get-started" class="div-mov-inner">
+
+                <h2>Getting Started</h2>
+
+                <p>
+                    To start with the project you have to perform some simple tasks.</p>
+
+                <p>
+                    <ol class="default-list">
+                        <li>Import the project into your Android Studio (Latest version)</li>
+                        <li>Replace Admob ids with yours.</li>
+                         <li>Get Key from www.currencylayer.com</li>
+                        <li>Changing app name, package name</li>
+                        <li>Reskinning the project: Change colors and Icon</li>
+                      
+                    </ol>
+                </p>
+
+                <p>
+                    Each step is explained in detail given below.
+                </p>
+
+            </div>
+
+            <div id="div-import-code" class="div-mov-inner">
+
+                <h2>Importing code into Android Studio</h2>
+
+                <p>
+                    To import the code into your Android Studio do the following steps after opening eclipse
+                </p>
+
+                <p>
+                    <ol class="default-list">
+                        <li>Start Android Studio.</li>
+                        <li>Click on open existing Android Studio project.</li>
+                        <li>Browse to the folder where you downlaoded the source code.</li>
+                        <li>Click on the Currency Converter project that showing Android Studio icon.</li>
+                        <li>Let Android Studio open the project and it will take some time.</li>
+                        
+                    </ol>
+                </p>
+
+
+            </div>
+
+            <div id="div-admob" class="div-mov-inner">
+
+                <h2>Adding Admob Id's</h2>
+
+               
+                        <ol class="default-list">
+                        <li>From the project Android go to res----->values----->strings.xml file.</li>
+                        <li>Look for the strings whose names are <strong>Admob_Banner</strong> and <strong>Admob_Interstitial</strong></li>
+                        <li>Change their values with your values.</li>
+                    </ol>
+
+                    <p>
+                        Before change -
+                        <br/>
+                        <code>
+                &lt;string name=&quot;Admob_Banner&quot;&gt;ca-app-pub-3940256099942544/6300978111&lt;/string&gt;</code>
+                    </p>
+                    <p>
+
+                        After change -
+                        <br/>
+                        <code>
+                &lt;string name=&quot;Admob_Banner&quot;&gt;Your banner ID&lt;/string&gt;</code>
+                    </p>
+
+                </p>
+
+            </div>
+
+            <div id="div-interstitial-interval" class="div-mov-inner">
+
+                <h2>Change interstitial Id</h2>
+
+                <p>In this app interstitial ads are shown when user press "Covert Button" in currency converter tab.</p>
+
+                <p> GO to res----->values----->strings.xml file and look for the Admob_Interstitial string.
+                </p>
+
+                <p>
+                    Before change -
+                    <br/>
+                    <code>
+                &lt;string name=&quot;Admob_Interstitial&quot;&gt;ca-app-pub-3940256099942544/1033173712&lt;/string&gt;</code>
+                </p>
+                <p>
+                    After change -
+                    <br/>
+                    <code>
+                &lt;string name=&quot;interstitial_interval&quot;&gt;Your Admob Interstitial&lt;/string&gt;</code>
+                </p>
+
+                <p>The other two values are the hints that user will recieve on video viewing or on sharing. Feel free to change them as you desire.</p>
+
+            </div>
+
+            <div id="div-tapjoy-offerwall" class="div-mov-inner">
+                <h2>Get API key from Currencylayer.com</h2>
+
+                <p>
+                    Currencylayer provides live stock currency rate of everything countries. It Gives 1000 free hit per month for free.
+                </p>
+
+                <p>
+                    <span class="sub-heading">What you have to do.</span>
+
+                    <ol class="default-list">
+                        <li>Register yourself at Currencylayer (If you are not already) - <a href="https://currencylayer.com/signup?plan=1">Currencylayer Link</a>.</li>
+                        <li>From the dashboard copy your API ACCESS KEY .</li>
+                             </ol>
+                </p>
+
+            
+
+                <p>
+                    <span class="sub-heading">Replace Currencylayer access key in source code.</span>
+
+                    <ol class="default-list">
+                        <li>Go to res-->values-->string.xml.</li>
+                        <li>
+                        
+                         <p>
+                    Before change -
+                    <br/>
+                    <code>
+                &lt;string name=&quot;Currencylayer_Key&quot;&gt;9a9a5b4b959847bf7d90d149dc477ba9&lt;/string&gt;</code>
+                </p>
+                <p>
+                    After change -
+                    <br/>
+                    <code>
+                &lt;string name=&quot;Currencylayer_Key&quot;&gt;Your API ACCESS KEY&lt;/string&gt;</code>
+                </p>
+                        
+                        
+                        </li>
+                        
+                    </ol>
+                </p>
+               
+
+
+            </div>
+
+            <div id="div-package" class="div-mov-inner">
+
+                <h2>Changing Package Name</h2>
+
+                <p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A-rITYZQj0A" frameborder="0" allowfullscreen></iframe>
+                </p>
+            </div>
+
+            
+
+            <div id="div-color" class="div-mov-inner">
+
+                <h2>Changing Colors</h2>
+
+                <p>
+                    To change the colors of Top bar, Tab bars and text present in the app go to res----->values----->colors.xml file.
+                </p>
+
+                <p>
+                    There you will see lines like these
+                    <br/>
+                    <code>&lt;color name=&quot;green&quot;&gt;#5bbc2f&lt;/color&gt;</code>
+                </p>
+                <p>
+                    After modification -
+                    <br/>
+                    <code>&lt;color name=&quot;green&quot;&gt;Your modified color&lt;/color&gt;</code>
+                </p>
+            </div>
+            
+            <div id="div-developername" class="div-mov-inner">
+
+                <h2>Change Developer Name</h2>
+
+                <p>
+                    To change the Google Play Developer Name to res----->values----->Strings.xml file.
+                </p>
+
+               
+                <p>
+                    Before modification -
+                    <br/>
+                    <code>
+                &lt;string name=&quot;playstore_developer_name&quot;&gt;Abcs101&lt;/string&gt;</code>
+                </p>
+                
+                 <p>
+                    After change -
+                    <br/>
+                    <code>
+                &lt;string name=&quot;playstore_developer_name&quot;&gt;You Google Ply Store developer name here&lt;/string&gt;</code>
+                </p>
+                
+            </div>
+
+            <div id="div-graphics" class="div-mov-inner">
+                <h2>Changing Graphics</h2>
+
+                <p>
+                    To change graphic images migrate to folder res. Here you will see folders like.
+                    <br/> drawable-mdpi
+                    <br/> drawable-ldpi
+                    <br/> drawable-hdpi
+                    <br/> drawable-xhdpi
+                    <br/> drawable-xxhdpi
+                    <br/> drawable-large-hdpi
+                    <br/> drabwale-xlarge-mdpi
+                </p>
+
+                <p>
+                    Thes folders contain graphics that are used in the app for different types of devices Just change the images to your images and <b>DO NOT RENAME YOUR NEW IMAGE TO A DIFFERENT NAME.</b>
+                    <br/> Eg - if your are changing an image ic_launcher.png then replace it with another image with the name as ic_launcher.png
+                </p>
+
+              
+            </div>
+
+            <div id="div-support" class="div-mov-inner">
+
+                <h2>Thank you for purchasing the item</h2>
+
+               
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>

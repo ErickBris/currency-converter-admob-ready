@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Free Currency Converter</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+
+    <string name="Admob_Banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="Admob_Interstitial">ca-app-pub-3940256099942544/1033173712</string>
+
+
+    <string name="Currencylayer_Key">c06e7bface1426bf042467a69fa35f5c</string>
+    <string name="Free_CC_link">http://free.currencyconverterapi.com/api/v3/convert?q=</string>
+
+    <string name="playstore_developer_name">Abcs101</string>
+
+</resources>

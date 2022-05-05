@@ -1,0 +1,146 @@
+html,
+body,
+.container-wrap {
+    position: relative;
+    height: 100%;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 120%;
+}
+
+pre {
+    display: inline-block;
+    font: normal 12px/22px Monaco, Monospace !important;
+    color: #CFDBEC;
+    background-color: #2f2f2f;
+    background-image: -webkit-repeating-linear-gradient(top, #444 0px, #444 22px, #2f2f2f 22px, #2f2f2f 44px);
+    background-image: -moz-repeating-linear-gradient(top, #444 0px, #444 22px, #2f2f2f 22px, #2f2f2f 44px);
+    background-image: -ms-repeating-linear-gradient(top, #444 0px, #444 22px, #2f2f2f 22px, #2f2f2f 44px);
+    background-image: -o-repeating-linear-gradient(top, #444 0px, #444 22px, #2f2f2f 22px, #2f2f2f 44px);
+    background-image: repeating-linear-gradient(top, #444 0px, #444 22px, #2f2f2f 22px, #2f2f2f 44px);
+    padding: 0em 1em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#div-fixed-wrap {
+    display: inline-block;
+    height: 100%;
+}
+
+#div-fixed {
+	position: absolute;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0px;
+	color: #FFF;
+	background-color: #5bbc2f;
+}
+
+#list-index {
+    list-style-type: none;
+    display: inline;
+}
+
+#list-index li {
+    position: relative;
+    text-align: left;
+    font-size: 1.2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+#list-index li a,
+#list-index li a:active,
+#list-index li a:visited,
+#list-index li a:focus {
+	text-decoration: none;
+	margin-left: 5px;
+	color: #FFF;
+}
+
+#list-index li a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+.div-mov-inner {
+    margin: 100px 0px 100px 0;
+}
+
+.close-header-mobile {
+    height: 80px;
+    overflow-y: hidden;
+}
+
+#div-fixed i {
+    display: none;
+    position: absolute;
+    right: 10px;
+    transition: all 0.3s ease-in;
+}
+
+#div-fixed i:hover {
+    cursor: pointer;
+    color: cornflowerblue;
+}
+
+.sub-heading{
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.default-list{
+    font-size: 120%;
+}
+
+@media only screen and (max-width: 767px) {
+    #div-fixed-wrap {
+        display: block;
+        height: 250px;
+        z-index: 1;
+        position: fixed;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: burlywood;
+    }
+    #div-fixed {
+        position: relative;
+        height: auto;
+    }
+    #div-fixed i {
+        display: inline;
+    }
+    #div-fixed h1 {
+        text-align: center;
+    }
+    #div-movable {
+        margin-top: 250px;
+    }
+}
+
+.div-mov-inner h3 {
+    display: inline;
+}
+
+.div-mov-inner h4 {
+    font-size: 124%;
+}
+
+code {
+	display: inline-block;
+	margin-left: 20px;
+	background-color: #5bbc2f;
+	padding: 20px;
+}
+
+::-webkit-scrollbar,
+-ms-scrollbar,
+-o-scrollbar {
+    /*    display: none;*/
+}
